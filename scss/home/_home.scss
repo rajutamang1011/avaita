@@ -1,0 +1,421 @@
+#heroSection,
+#voiceCard,
+#hireSection, #countrySection, #softwareSection {
+    h1 {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        @include responsive(phone) {
+            font-size: 28px;
+        }
+    }
+    p {
+        font-size: 17px;
+        margin-bottom: 15px;
+        @include responsive(phone) {
+            font-size: 16px;
+        }
+    }
+}
+
+#heroSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    margin-top: 80px;
+    @include responsive(phone) {
+        height: auto;
+        margin-top: 55px;
+    }
+    .row {
+        @include responsive(phone) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .bot_button {
+        margin: 15px 0;
+        padding: 14px 40px;
+        text-transform: uppercase;
+        &:hover {
+            color: white;
+        }
+        @include responsive(phone) {
+            padding: 12px 35px;
+        }
+    }
+
+    .heroCover {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        @include responsive(phone) {
+            text-align: center;
+            margin-top: 45px;
+        }
+    }
+    .videoCover {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .myVideo {
+            height: 780px;
+            margin-top: 40px;
+            @include responsive(phone) {
+                height: 630px;
+                margin-top: 0px;
+            }
+        }
+    }
+    .avatars_voice {
+        .voice {
+            display: flex;
+            background: #f5c6de;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 25px;
+            position: relative;
+            overflow: visible;
+            border: 1px solid #f5c6de;
+            cursor: pointer;
+        }
+
+        .voice.active {
+            background: #ffb3d9;
+            border: 1px solid #90004a;
+            transition: all 0.3s ease;
+        }
+
+        .avatar {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .audoBox{
+            position: relative;
+            padding-left: 10px;
+            margin-left: 10px;
+            &::after{
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 80%;
+                background: #7b7b7b;
+                top: 5px;
+                left: 0;
+            }
+        }
+        .person_info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 15px;
+            h4 {
+                font-size: 17px;
+                margin-bottom: 0;
+                font-weight: 600;
+            }
+            small {
+                font-weight: 600;
+                color: #90004a;
+            }
+        }
+    }
+}
+
+#countrySection{
+    background: rgba(245, 198, 222, 0.3411764706);
+    .heading {
+        text-align: center;
+    }
+    .wave_container{
+        flex: 1;
+        h3{
+            font-size: 16px;
+            margin-bottom: 0;
+            font-weight: 600;
+        }
+    }
+    .avatars_voice {
+        margin-top: 50px;
+        .voice {
+            display: flex;
+            background: #f5c6de;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 25px;
+            position: relative;
+            overflow: visible;
+            border: 1px solid #f5c6de;
+            cursor: pointer;
+        }
+
+        .voice.active {
+            background: #ffb3d9;
+            border: 1px solid #90004a;
+            transition: all 0.3s ease;
+        }
+
+        .avatar {
+            height: 55px;
+            width: 55px;
+            border-radius: 10px;
+            overflow: hidden;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .audoBox{
+            position: relative;
+            padding-left: 10px;
+            margin-left: 10px;
+            .buttonBox{
+                margin-left: 15px;
+                margin-right: 0;
+            }
+        }
+        .person_info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 15px;
+            h4 {
+                font-size: 17px;
+                margin-bottom: 0;
+                font-weight: 600;
+            }
+            small {
+                font-weight: 600;
+                color: #90004a;
+            }
+        }
+    }
+}
+
+#voiceCard {
+    .heading {
+        text-align: center;
+    }
+    .voiceCard_row {
+        margin: 40px 0;
+    }
+    .voiceCard {
+        border-radius: 20px;
+        overflow: hidden;
+        border: 1px solid #dcdcdc;
+        img {
+            height: 380px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .cardContent {
+            padding: 25px;
+        }
+        h3 {
+            font-weight: 600;
+            font-size: 23px;
+        }
+    }
+}
+
+#softwareSection{
+    background: #f5c6de57;
+    .heading {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .software_flex{
+        flex-wrap: wrap;
+    }
+    .imageBox{
+        background: white;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+        padding: 30px;
+        margin: 0 12px;
+        margin-bottom: 25px;
+        border-radius: 20px;
+        width: 122px;
+        height: 122px;
+    }
+}
+
+.audoBox {
+    display: flex;
+    flex: 1;
+    .buttonBox {
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .play-button {
+        background-color: #000;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        cursor: pointer;
+        font-size: 20px;
+        color: #fff;
+    }
+}
+.waveform-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hireSection {
+    .heading {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .profile-card {
+        background-color: #f5c6de;
+        border-radius: 15px;
+        text-align: center;
+        position: relative;
+        margin-bottom: 20px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .audio_content {
+            padding: 25px;
+        }
+ 
+    }
+
+    .star-icon {
+        color: #ffc107;
+    }
+}
+
+// theme custom 
+
+.frontend-background{
+    background: none !important;
+}
+
+#main-wrapper .navbar-nav li.nav-item a.nav-link {
+    color: #000 !important;
+}
+
+#main-wrapper .navbar-nav li.nav-item a.active {
+    color: #eb1d84 !important;
+}
+
+#main-wrapper .minimize-navbar li.nav-item a.active {
+    color: #eb1d84 !important;
+}
+
+#main-wrapper .navbar{
+    padding: 0 !important;
+}
+
+#main-wrapper .minimize-navbar li.nav-item a.active {
+    color: #eb1d84 !important;
+}
+
+#main-wrapper #login-button {
+    color: #000 !important;
+}
+
+#main-wrapper .icon span {
+    color: #1e1e2d;
+}
+
+#welcome-footer #copyright p a {
+    color: #eb2183 !important;
+}
+
+#welcome-footer #footer a.footer-link:hover, #welcome-footer #footer a.footer-link:focus {
+    color: #eb2183 !important;
+}
+#back-to-top {
+    background-color: #eb2183 !important;
+}
+#back-to-top:hover i {
+    color: white !important;
+}
+
+.row .title h3 span {
+    color: #ed1d83 !important;
+}
+
+.row .title p {
+    color: #eb1d8a !important;
+}
+
+.tabs-menu ul li .active {
+    background: #eb2183 !important;
+}
+#prices-wrapper .card .plan-title{
+    color: #eb2183 !important;
+}
+
+.btn-primary-pricing:hover, .btn-primary-pricing:focus {
+    background-color: #eb2183 !important;
+    border-color: #eb2183 !important;
+}
+
+#prices-wrapper .card:hover .plan-cost, #prices-wrapper .card:focus .plan-cost {
+    color: #eb2183 !important;
+}
+
+#templates-wrapper .show-templates-button a:hover {
+    background: #eb2183 !important;
+}
+
+#prices-wrapper .card .plan-cost {
+    font-weight: 700 !important;
+    span{
+        font-weight: 600;
+    }
+}
+
+a:hover {
+    color: #eb2183 !important;
+}
+
+#templates-wrapper{
+    .card-body{
+        display: flex;
+        min-height: auto !important;
+    }
+}
+.template .template-icon i.video-icon {
+    font-size: 26px !important;
+    padding: 0 !important;
+    color: #000000 !important;
+    border-radius: 0 !important;
+    background: none !important;
+}
+.template-icon_Wrap{
+    height: 50px;
+    width: 50px;
+    background: rgb(235 33 131 / 26%) ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 50%;
+}

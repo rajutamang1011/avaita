@@ -1,0 +1,30 @@
+@import "mediaQueries";
+@import "config";
+
+
+.no-mar-pad {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.no-mar-padright {
+    padding-right: 0;
+}
+
+.no-mar-padleft {
+    padding-left: 0;
+}
+body {
+    font-family: $font-stack;
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1320px !important;
+    }
+}
+
+
+@import "common";
+@import "home/home";
+

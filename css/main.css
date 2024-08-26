@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.no-mar-pad {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.no-mar-padright {
+  padding-right: 0;
+}
+
+.no-mar-padleft {
+  padding-left: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1320px !important;
+  }
+}
+.secGap {
+  padding: 80px 0;
+}
+@media only screen and (max-width: 600px) {
+  .secGap {
+    padding: 30px 0;
+  }
+}
+
+.bot_button {
+  background: #ee1c88;
+  padding: 10px 30px;
+  border-radius: 25px;
+  font-weight: 700;
+  color: #fff;
+}
+.bot_button:hover {
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000000;
+}
+
+p {
+  color: #000000;
+}
+
+input:focus, textarea:focus {
+  border-color: #ee1c88;
+}
+
+@media (min-width: 768px) {
+  .col-1-5 {
+    width: 20%;
+    float: left;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+#heroSection h1,
+#voiceCard h1,
+#hireSection h1, #countrySection h1, #softwareSection h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+@media only screen and (max-width: 600px) {
+  #heroSection h1,
+  #voiceCard h1,
+  #hireSection h1, #countrySection h1, #softwareSection h1 {
+    font-size: 28px;
+  }
+}
+#heroSection p,
+#voiceCard p,
+#hireSection p, #countrySection p, #softwareSection p {
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 600px) {
+  #heroSection p,
+  #voiceCard p,
+  #hireSection p, #countrySection p, #softwareSection p {
+    font-size: 16px;
+  }
+}
+
+#heroSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  margin-top: 80px;
+}
+@media only screen and (max-width: 600px) {
+  #heroSection {
+    height: auto;
+    margin-top: 55px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #heroSection .row {
+    flex-direction: column-reverse;
+  }
+}
+#heroSection .bot_button {
+  margin: 15px 0;
+  padding: 14px 40px;
+  text-transform: uppercase;
+}
+#heroSection .bot_button:hover {
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+  #heroSection .bot_button {
+    padding: 12px 35px;
+  }
+}
+#heroSection .heroCover {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media only screen and (max-width: 600px) {
+  #heroSection .heroCover {
+    text-align: center;
+    margin-top: 45px;
+  }
+}
+#heroSection .videoCover {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#heroSection .videoCover .myVideo {
+  height: 780px;
+  margin-top: 40px;
+}
+@media only screen and (max-width: 600px) {
+  #heroSection .videoCover .myVideo {
+    height: 630px;
+    margin-top: 0px;
+  }
+}
+#heroSection .avatars_voice .voice {
+  display: flex;
+  background: #f5c6de;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 25px;
+  position: relative;
+  overflow: visible;
+  border: 1px solid #f5c6de;
+  cursor: pointer;
+}
+#heroSection .avatars_voice .voice.active {
+  background: #ffb3d9;
+  border: 1px solid #90004a;
+  transition: all 0.3s ease;
+}
+#heroSection .avatars_voice .avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#heroSection .avatars_voice .avatar img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#heroSection .avatars_voice .audoBox {
+  position: relative;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+#heroSection .avatars_voice .audoBox::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 80%;
+  background: #7b7b7b;
+  top: 5px;
+  left: 0;
+}
+#heroSection .avatars_voice .person_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+}
+#heroSection .avatars_voice .person_info h4 {
+  font-size: 17px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+#heroSection .avatars_voice .person_info small {
+  font-weight: 600;
+  color: #90004a;
+}
+
+#countrySection {
+  background: rgba(245, 198, 222, 0.3411764706);
+}
+#countrySection .heading {
+  text-align: center;
+}
+#countrySection .wave_container {
+  flex: 1;
+}
+#countrySection .wave_container h3 {
+  font-size: 16px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+#countrySection .avatars_voice {
+  margin-top: 50px;
+}
+#countrySection .avatars_voice .voice {
+  display: flex;
+  background: #f5c6de;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 25px;
+  position: relative;
+  overflow: visible;
+  border: 1px solid #f5c6de;
+  cursor: pointer;
+}
+#countrySection .avatars_voice .voice.active {
+  background: #ffb3d9;
+  border: 1px solid #90004a;
+  transition: all 0.3s ease;
+}
+#countrySection .avatars_voice .avatar {
+  height: 55px;
+  width: 55px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#countrySection .avatars_voice .avatar img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#countrySection .avatars_voice .audoBox {
+  position: relative;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+#countrySection .avatars_voice .audoBox .buttonBox {
+  margin-left: 15px;
+  margin-right: 0;
+}
+#countrySection .avatars_voice .person_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+}
+#countrySection .avatars_voice .person_info h4 {
+  font-size: 17px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+#countrySection .avatars_voice .person_info small {
+  font-weight: 600;
+  color: #90004a;
+}
+
+#voiceCard .heading {
+  text-align: center;
+}
+#voiceCard .voiceCard_row {
+  margin: 40px 0;
+}
+#voiceCard .voiceCard {
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #dcdcdc;
+}
+#voiceCard .voiceCard img {
+  height: 380px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#voiceCard .voiceCard .cardContent {
+  padding: 25px;
+}
+#voiceCard .voiceCard h3 {
+  font-weight: 600;
+  font-size: 23px;
+}
+
+#softwareSection {
+  background: rgba(245, 198, 222, 0.3411764706);
+}
+#softwareSection .heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#softwareSection .software_flex {
+  flex-wrap: wrap;
+}
+#softwareSection .imageBox {
+  background: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  padding: 30px;
+  margin: 0 12px;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  width: 122px;
+  height: 122px;
+}
+
+.audoBox {
+  display: flex;
+  flex: 1;
+}
+.audoBox .buttonBox {
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.audoBox .play-button {
+  background-color: #000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+}
+
+.waveform-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#hireSection .heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#hireSection .profile-card {
+  background-color: #f5c6de;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+#hireSection .profile-card img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#hireSection .profile-card .audio_content {
+  padding: 25px;
+}
+#hireSection .star-icon {
+  color: #ffc107;
+}
+
+.frontend-background {
+  background: none !important;
+}
+
+#main-wrapper .navbar-nav li.nav-item a.nav-link {
+  color: #000 !important;
+}
+
+#main-wrapper .navbar-nav li.nav-item a.active {
+  color: #eb1d84 !important;
+}
+
+#main-wrapper .minimize-navbar li.nav-item a.active {
+  color: #eb1d84 !important;
+}
+
+#main-wrapper .navbar {
+  padding: 0 !important;
+}
+
+#main-wrapper .minimize-navbar li.nav-item a.active {
+  color: #eb1d84 !important;
+}
+
+#main-wrapper #login-button {
+  color: #000 !important;
+}
+
+#main-wrapper .icon span {
+  color: #1e1e2d;
+}
+
+#welcome-footer #copyright p a {
+  color: #eb2183 !important;
+}
+
+#welcome-footer #footer a.footer-link:hover, #welcome-footer #footer a.footer-link:focus {
+  color: #eb2183 !important;
+}
+
+#back-to-top {
+  background-color: #eb2183 !important;
+}
+
+#back-to-top:hover i {
+  color: white !important;
+}
+
+.row .title h3 span {
+  color: #ed1d83 !important;
+}
+
+.row .title p {
+  color: #eb1d8a !important;
+}
+
+.tabs-menu ul li .active {
+  background: #eb2183 !important;
+}
+
+#prices-wrapper .card .plan-title {
+  color: #eb2183 !important;
+}
+
+.btn-primary-pricing:hover, .btn-primary-pricing:focus {
+  background-color: #eb2183 !important;
+  border-color: #eb2183 !important;
+}
+
+#prices-wrapper .card:hover .plan-cost, #prices-wrapper .card:focus .plan-cost {
+  color: #eb2183 !important;
+}
+
+#templates-wrapper .show-templates-button a:hover {
+  background: #eb2183 !important;
+}
+
+#prices-wrapper .card .plan-cost {
+  font-weight: 700 !important;
+}
+#prices-wrapper .card .plan-cost span {
+  font-weight: 600;
+}
+
+a:hover {
+  color: #eb2183 !important;
+}
+
+#templates-wrapper .card-body {
+  display: flex;
+  min-height: auto !important;
+}
+
+.template .template-icon i.video-icon {
+  font-size: 26px !important;
+  padding: 0 !important;
+  color: #000000 !important;
+  border-radius: 0 !important;
+  background: none !important;
+}
+
+.template-icon_Wrap {
+  height: 50px;
+  width: 50px;
+  background: rgba(235, 33, 131, 0.26);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 50%;
+}/*# sourceMappingURL=main.css.map */

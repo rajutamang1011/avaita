@@ -1,0 +1,828 @@
+ <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous">
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <!-- css_link  -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>AI Voice Over</title>
+  </head>
+  <body>
+    <header>
+    </header>
+    <main>
+      <section id="heroSection" class="secGap">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5 heroCover">
+              <div class="contetGroup">
+                <h1>AI Voice Over
+                </h1>
+                <p>Speechify AI Voice Over uses advanced AI text to speech
+                  technology, which allows video creators, podcasters,
+                  narrators, gaming developers, business professionals, and more
+                  to create lifelike generative AI voice overs, saving time and
+                  money.
+                </p>
+                <p>Al Voice Generator is perfect for beginner content creators
+                  and pros alike.</p>
+                <a href="#" class="btn bot_button">Start Creating for free</a>
+              </div>
+            </div>
+            <div class="col-sm-7 avatars_voice">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="voice">
+                    <div class="avatar">
+                      <img src="./images/person/usa.png" class="img-fluid"
+                        alt="person_image">
+                    </div>
+                    <div class="audoBox">
+                      <div class="buttonBox">
+                        <div class="play-button" id="playButton1">
+                          <i class="fas fa-play" id="playIcon1"></i>
+                          <i class="fas fa-pause" id="pauseIcon1"
+                            style="display: none;"></i>
+                        </div>
+                      </div>
+                      <div class="waveform-container" id="waveform1"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="voice">
+                    <div class="avatar">
+                      <img src="./images/person/german.png" class="img-fluid"
+                        alt="person_image">
+                    </div>
+                    <div class="audoBox">
+                      <div class="buttonBox">
+                        <div class="play-button" id="playButton2">
+                          <i class="fas fa-play" id="playIcon2"></i>
+                          <i class="fas fa-pause" id="pauseIcon2"
+                            style="display: none;"></i>
+                        </div>
+                      </div>
+                      <div class="waveform-container" id="waveform2"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="voice">
+                    <div class="avatar">
+                      <img src="./images/person/french.png" class="img-fluid"
+                        alt="person_image">
+                    </div>
+                    <div class="audoBox">
+                      <div class="buttonBox">
+                        <div class="play-button" id="playButton3">
+                          <i class="fas fa-play" id="playIcon3"></i>
+                          <i class="fas fa-pause" id="pauseIcon3"
+                            style="display: none;"></i>
+                        </div>
+                      </div>
+                      <div class="waveform-container" id="waveform3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="voice">
+                    <div class="avatar">
+                      <img src="./images/person/italian.png" class="img-fluid"
+                        alt="person_image">
+                    </div>
+                    <div class="audoBox">
+                      <div class="buttonBox">
+                        <div class="play-button" id="playButton4">
+                          <i class="fas fa-play" id="playIcon4"></i>
+                          <i class="fas fa-pause" id="pauseIcon4"
+                            style="display: none;"></i>
+                        </div>
+                      </div>
+                      <div class="waveform-container" id="waveform4"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="voice">
+                    <div class="avatar">
+                      <img src="./images/person/Spain.png" class="img-fluid"
+                        alt="person_image">
+                    </div>
+                    <div class="audoBox">
+                      <div class="buttonBox">
+                        <div class="play-button" id="playButton5">
+                          <i class="fas fa-play" id="playIcon5"></i>
+                          <i class="fas fa-pause" id="pauseIcon5"
+                            style="display: none;"></i>
+                        </div>
+                      </div>
+                      <div class="waveform-container" id="waveform5"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="voice">
+                    <div class="avatar">
+                      <img src="./images/person/belgium.png" class="img-fluid"
+                        alt="person_image">
+                    </div>
+                    <div class="audoBox">
+                      <div class="buttonBox">
+                        <div class="play-button" id="playButton6">
+                          <i class="fas fa-play" id="playIcon6"></i>
+                          <i class="fas fa-pause" id="pauseIcon6"
+                            style="display: none;"></i>
+                        </div>
+                      </div>
+                      <div class="waveform-container" id="waveform6"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="voice">
+                    <div class="avatar">
+                      <img src="./images/person/Nepal.png" class="img-fluid"
+                        alt="person_image">
+                    </div>
+                    <div class="audoBox">
+                      <div class="buttonBox">
+                        <div class="play-button" id="playButton7">
+                          <i class="fas fa-play" id="playIcon7"></i>
+                          <i class="fas fa-pause" id="pauseIcon7"
+                            style="display: none;"></i>
+                        </div>
+                      </div>
+                      <div class="waveform-container" id="waveform7"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="voice">
+                    <div class="avatar">
+                      <img src="./images/person/India.png" class="img-fluid"
+                        alt="person_image">
+                    </div>
+                    <div class="audoBox">
+                      <div class="buttonBox">
+                        <div class="play-button" id="playButton8">
+                          <i class="fas fa-play" id="playIcon8"></i>
+                          <i class="fas fa-pause" id="pauseIcon8"
+                            style="display: none;"></i>
+                        </div>
+                      </div>
+                      <div class="waveform-container" id="waveform8"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section id="voiceCard" class="secGap">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-10 heading">
+              <h1>Lifelike generative AI voice overs
+              </h1>
+              <p>Speechify AI Voice offers natural-sounding voices for a wide
+                range of use cases, including audiobooks, promo videos,
+                explainer videos, e-learning content, podcasts, and so much
+                more. Here are just a few examples of how you can use Speechify
+                AI Voice Generator:
+              </p>
+            </div>
+          </div>
+          <div class="row voiceCard_row">
+            <div class="col-sm-4">
+              <div class="voiceCard">
+                <img src="images/be-efficient.webp" class="img-fluid"
+                  alt="person_image">
+                <div class="cardContent">
+                  <h3>Realistic AI voice generator
+                  </h3>
+                  <p>AI Voice Over converts any text in over 50 languages to a
+                    natural speaking voice.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="voiceCard">
+                <img src="images/be-efficient.webp" class="img-fluid"
+                  alt="person_image">
+                <div class="cardContent">
+                  <h3>Realistic AI voice generator
+                  </h3>
+                  <p>AI Voice Over converts any text in over 50 languages to a
+                    natural speaking voice.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="voiceCard">
+                <img src="images/be-efficient.webp" class="img-fluid"
+                  alt="person_image">
+                <div class="cardContent">
+                  <h3>Realistic AI voice generator
+                  </h3>
+                  <p>AI Voice Over converts any text in over 50 languages to a
+                    natural speaking voice.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <div class="btnCover">
+                <a href="#" class="btn bot_button">Try for free</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="hireSection" class="secGap">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-sm-10 heading">
+                <h1>Hire one, or all our AI Voice Actors
+                </h1>
+                <p>Fine tune our AI voices, edit emotion, tone, speed, and more
+                  to get exactly what you need.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="profile-card">
+                  <img src="./images/hire/am_m.jpg"
+                    class="img-fluid"
+                    alt="Profile 1">
+                  <div class="audio_content">
+                    <h4>Andrew <span class="star-icon">★</span> 5.0</h4>
+                    <p>American English</p>
+                    <div class="audoBox">
+                      <div class="buttonBox">
+                        <div class="play-button" id="playButton9">
+                          <i class="fas fa-play" id="playIcon9"></i>
+                          <i class="fas fa-pause" id="pauseIcon9"
+                            style="display: none;"></i>
+                        </div>
+                      </div>
+                      <div class="waveform-container"
+                        id="waveform9"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="profile-card">
+                  <img src="./images/hire/am_f.jpg"
+                    class="img-fluid"
+                    alt="Profile 1">
+                  <div class="audio_content">
+                    <h4>Andrew <span class="star-icon">★</span> 5.0</h4>
+                    <p>American English</p>
+                    <div class="audoBox">
+                      <div class="buttonBox">
+                        <div class="play-button" id="playButton10">
+                          <i class="fas fa-play" id="playIcon10"></i>
+                          <i class="fas fa-pause" id="pauseIcon10"
+                            style="display: none;"></i>
+                        </div>
+                      </div>
+                      <div class="waveform-container"
+                        id="waveform10"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="profile-card">
+                  <img src="./images/hire/am_f1.jpg"
+                    class="img-fluid"
+                    alt="Profile 1">
+                  <div class="audio_content">
+                    <h4>Andrew <span class="star-icon">★</span> 5.0</h4>
+                    <p>American English</p>
+                    <div class="audoBox">
+                      <div class="buttonBox">
+                        <div class="play-button" id="playButton11">
+                          <i class="fas fa-play" id="playIcon11"></i>
+                          <i class="fas fa-pause" id="pauseIcon11"
+                            style="display: none;"></i>
+                        </div>
+                      </div>
+                      <div class="waveform-container"
+                        id="waveform11"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="profile-card">
+                  <img src="./images/hire/am_m1.jpg"
+                    class="img-fluid"
+                    alt="Profile 1">
+                  <div class="audio_content">
+                    <h4>Andrew <span class="star-icon">★</span> 5.0</h4>
+                    <p>American English</p>
+                    <div class="audoBox">
+                      <div class="buttonBox">
+                        <div class="play-button" id="playButton12">
+                          <i class="fas fa-play" id="playIcon12"></i>
+                          <i class="fas fa-pause" id="pauseIcon12"
+                            style="display: none;"></i>
+                        </div>
+                      </div>
+                      <div class="waveform-container"
+                        id="waveform12"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="profile-card">
+                  <img src="./images/hire/br_f.jpg"
+                    class="img-fluid"
+                    alt="Profile 1">
+                  <div class="audio_content">
+                    <h4>Andrew <span class="star-icon">★</span> 5.0</h4>
+                    <p>American English</p>
+                    <div class="audoBox">
+                      <div class="buttonBox">
+                        <div class="play-button" id="playButton13">
+                          <i class="fas fa-play" id="playIcon13"></i>
+                          <i class="fas fa-pause" id="pauseIcon13"
+                            style="display: none;"></i>
+                        </div>
+                      </div>
+                      <div class="waveform-container"
+                        id="waveform13"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="profile-card">
+                  <img src="./images/hire/br_m.jpg"
+                    class="img-fluid"
+                    alt="Profile 1">
+                  <div class="audio_content">
+                    <h4>Andrew <span class="star-icon">★</span> 5.0</h4>
+                    <p>American English</p>
+                    <div class="audoBox">
+                      <div class="buttonBox">
+                        <div class="play-button" id="playButton14">
+                          <i class="fas fa-play" id="playIcon14"></i>
+                          <i class="fas fa-pause" id="pauseIcon14"
+                            style="display: none;"></i>
+                        </div>
+                      </div>
+                      <div class="waveform-container"
+                        id="waveform14"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="profile-card">
+                  <img src="./images/hire/ca_f.jpg"
+                    class="img-fluid"
+                    alt="Profile 1">
+                  <div class="audio_content">
+                    <h4>Andrew <span class="star-icon">★</span> 5.0</h4>
+                    <p>American English</p>
+                    <div class="audoBox">
+                      <div class="buttonBox">
+                        <div class="play-button" id="playButton15">
+                          <i class="fas fa-play" id="playIcon15"></i>
+                          <i class="fas fa-pause" id="pauseIcon15"
+                            style="display: none;"></i>
+                        </div>
+                      </div>
+                      <div class="waveform-container"
+                        id="waveform15"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="profile-card">
+                  <img src="./images/hire/au_m.jpg"
+                    class="img-fluid"
+                    alt="Profile 1">
+                  <div class="audio_content">
+                    <h4>Andrew <span class="star-icon">★</span> 5.0</h4>
+                    <p>American English</p>
+                    <div class="audoBox">
+                      <div class="buttonBox">
+                        <div class="play-button" id="playButton16">
+                          <i class="fas fa-play" id="playIcon16"></i>
+                          <i class="fas fa-pause" id="pauseIcon16"
+                            style="display: none;"></i>
+                        </div>
+                      </div>
+                      <div class="waveform-container"
+                        id="waveform16"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="countrySection" class="secGap">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-sm-10 heading">
+                <h1>Create Voiceovers in Other
+                  Languages with only 3 clicks!
+                </h1>
+                <p>Extend your reach in non-english speaking countries!
+                </p>
+              </div>
+            </div>
+            <div class="row avatars_voice">
+              <div class="col-sm-4">
+                <div class="voice">
+                  <div class="avatar">
+                    <img src="./images/country/usa.webp"
+                      class="img-fluid"
+                      alt="person_image">
+                  </div>
+                  <div class="audoBox">
+                    <div class="wave_container">
+                      <h3>USA</h3>
+                      <div class="waveform-container" id="waveform17"></div>
+                    </div>
+                    <div class="buttonBox">
+                      <div class="play-button" id="playButton17">
+                        <i class="fas fa-play" id="playIcon17"></i>
+                        <i class="fas fa-pause" id="pauseIcon17"
+                          style="display: none;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="voice">
+                  <div class="avatar">
+                    <img src="./images/country/germany.webp"
+                      class="img-fluid"
+                      alt="person_image">
+                  </div>
+                  <div class="audoBox">
+                    <div class="wave_container">
+                      <h3>German</h3>
+                      <div class="waveform-container" id="waveform18"></div>
+                    </div>
+                    <div class="buttonBox">
+                      <div class="play-button" id="playButton18">
+                        <i class="fas fa-play" id="playIcon18"></i>
+                        <i class="fas fa-pause" id="pauseIcon18"
+                          style="display: none;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="voice">
+                  <div class="avatar">
+                    <img src="./images/country/france.webp"
+                      class="img-fluid"
+                      alt="person_image">
+                  </div>
+                  <div class="audoBox">
+                    <div class="wave_container">
+                      <h3>French - France</h3>
+                      <div class="waveform-container" id="waveform19"></div>
+                    </div>
+                    <div class="buttonBox">
+                      <div class="play-button" id="playButton19">
+                        <i class="fas fa-play" id="playIcon19"></i>
+                        <i class="fas fa-pause" id="pauseIcon19"
+                          style="display: none;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="voice">
+                  <div class="avatar">
+                    <img src="./images/country/italy.webp"
+                      class="img-fluid"
+                      alt="person_image">
+                  </div>
+                  <div class="audoBox">
+                    <div class="wave_container">
+                      <h3>Italian</h3>
+                      <div class="waveform-container" id="waveform20"></div>
+                    </div>
+                    <div class="buttonBox">
+                      <div class="play-button" id="playButton20">
+                        <i class="fas fa-play" id="playIcon20"></i>
+                        <i class="fas fa-pause" id="pauseIcon20"
+                          style="display: none;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="voice">
+                  <div class="avatar">
+                    <img src="./images/country/spain.webp"
+                      class="img-fluid"
+                      alt="person_image">
+                  </div>
+                  <div class="audoBox">
+                    <div class="wave_container">
+                      <h3>Spain</h3>
+                      <div class="waveform-container" id="waveform21"></div>
+                    </div>
+                    <div class="buttonBox">
+                      <div class="play-button" id="playButton21">
+                        <i class="fas fa-play" id="playIcon21"></i>
+                        <i class="fas fa-pause" id="pauseIcon21"
+                          style="display: none;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="voice">
+                  <div class="avatar">
+                    <img src="./images/country/belgium.webp"
+                      class="img-fluid"
+                      alt="person_image">
+                  </div>
+                  <div class="audoBox">
+                    <div class="wave_container">
+                      <h3>Belgium - Dutch</h3>
+                      <div class="waveform-container" id="waveform22"></div>
+                    </div>
+                    <div class="buttonBox">
+                      <div class="play-button" id="playButton22">
+                        <i class="fas fa-play" id="playIcon22"></i>
+                        <i class="fas fa-pause" id="pauseIcon22"
+                          style="display: none;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="voice">
+                  <div class="avatar">
+                    <img src="./images/country/china.webp"
+                      class="img-fluid"
+                      alt="person_image">
+                  </div>
+                  <div class="audoBox">
+                    <div class="wave_container">
+                      <h3>China</h3>
+                      <div class="waveform-container" id="waveform23"></div>
+                    </div>
+                    <div class="buttonBox">
+                      <div class="play-button" id="playButton23">
+                        <i class="fas fa-play" id="playIcon23"></i>
+                        <i class="fas fa-pause" id="pauseIcon23"
+                          style="display: none;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="voice">
+                  <div class="avatar">
+                    <img src="./images/country/india.jpg"
+                      class="img-fluid"
+                      alt="person_image">
+                  </div>
+                  <div class="audoBox">
+                    <div class="wave_container">
+                      <h3>India</h3>
+                      <div class="waveform-container" id="waveform24"></div>
+                    </div>
+                    <div class="buttonBox">
+                      <div class="play-button" id="playButton24">
+                        <i class="fas fa-play" id="playIcon24"></i>
+                        <i class="fas fa-pause" id="pauseIcon24"
+                          style="display: none;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="voice">
+                  <div class="avatar">
+                    <img src="./images/country/nepal.webp"
+                      class="img-fluid"
+                      alt="person_image">
+                  </div>
+                  <div class="audoBox">
+                    <div class="wave_container">
+                      <h3>Nepal - Nepali</h3>
+                      <div class="waveform-container" id="waveform25"></div>
+                    </div>
+                    <div class="buttonBox">
+                      <div class="play-button" id="playButton25">
+                        <i class="fas fa-play" id="playIcon25"></i>
+                        <i class="fas fa-pause" id="pauseIcon25"
+                          style="display: none;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="softwareSection" class="secGap">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-10 heading">
+              <h1>Compatible arrowwith All Video
+                Editing Software
+              </h1>
+              <p>Creates MP3 files that can be used in any video software
+                programs, including:
+              </p>
+            </div>
+          </div>
+          <div class="row software_flex">
+            <div class="imageBox">
+              <img src="./images/software/1.png" class="img-fluid" alt>
+            </div>
+            <div class="imageBox">
+              <img src="./images/software/1.png" class="img-fluid" alt>
+            </div>
+            <div class="imageBox">
+              <img src="./images/software/1.png" class="img-fluid" alt>
+            </div>
+            <div class="imageBox">
+              <img src="./images/software/1.png" class="img-fluid" alt>
+            </div>
+            <div class="imageBox">
+              <img src="./images/software/1.png" class="img-fluid" alt>
+            </div>
+            <div class="imageBox">
+              <img src="./images/software/1.png" class="img-fluid" alt>
+            </div>
+            <div class="imageBox">
+              <img src="./images/software/1.png" class="img-fluid" alt>
+            </div>
+            <div class="imageBox">
+              <img src="./images/software/1.png" class="img-fluid" alt>
+            </div>
+            <div class="imageBox">
+              <img src="./images/software/1.png" class="img-fluid" alt>
+            </div>
+            <div class="imageBox">
+              <img src="./images/software/1.png" class="img-fluid" alt>
+            </div>
+            <div class="imageBox">
+              <img src="./images/software/1.png" class="img-fluid" alt>
+            </div>
+            <div class="imageBox">
+              <img src="./images/software/1.png" class="img-fluid" alt>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer></footer>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+      <script>
+  document.addEventListener('DOMContentLoaded', function() {
+  let currentlyPlayingWaveform = null;
+  let waveforms = [];
+
+  // Initialize waveforms for all sections
+  for (let i = 1; i <= 26; i++) {
+    initializeWaveform(i, getAudioPath(i));
+  }
+
+  function getAudioPath(index) {
+    if (index <= 8) {
+      return './audio/top/audio_' + index + '.wav';
+    } else if (index <= 16) {
+      return './audio/bottom/audio_' + (index - 8) + '.wav';
+    } else {
+      return './audio/country/audio_' + (index - 16) + '.wav';
+    }
+  }
+
+  function initializeWaveform(index, audioPath) {
+    waveforms[index] = WaveSurfer.create({
+      container: '#waveform' + index,
+      waveColor: '#ffffff',
+      progressColor: '#000',
+      barWidth: 2,
+      cursorColor: 'transparent',
+      cursorWidth: 0,
+      height: 40,
+      backend: 'MediaElement',
+      xhr: {
+        cache: 'default',
+        mode: 'cors',
+        method: 'GET',
+        credentials: 'same-origin',
+        headers: [
+          { key: 'cache-control', value: 'no-cache' },
+          { key: 'pragma', value: 'no-cache' }
+        ]
+      }
+    });
+
+    initializeAudioControls(index, audioPath);
+  }
+
+  function initializeAudioControls(index, audioPath) {
+    const playButton = document.getElementById('playButton' + index);
+    const playIcon = document.getElementById('playIcon' + index);
+    const pauseIcon = document.getElementById('pauseIcon' + index);
+
+    waveforms[index].load(audioPath);
+
+    waveforms[index].on('ready', function() {
+      waveforms[index].isReady = true;
+      playButton.disabled = false;
+    });
+
+    playButton.addEventListener('click', function() {
+      if (currentlyPlayingWaveform !== null && currentlyPlayingWaveform !== index) {
+        // Pause and reset the currently playing waveform
+        waveforms[currentlyPlayingWaveform].stop();
+        resetWaveformIcons(currentlyPlayingWaveform);
+      }
+
+      if (waveforms[index].isReady) {
+        playAudio(index);
+      } else {
+        waveforms[index].once('ready', function() {
+          playAudio(index);
+        });
+      }
+    });
+
+    waveforms[index].on('finish', function() {
+      resetWaveformIcons(index);
+      currentlyPlayingWaveform = null;
+    });
+
+    playButton.disabled = true;
+  }
+
+  function playAudio(index) {
+    waveforms[index].playPause();
+
+    if (waveforms[index].isPlaying()) {
+      document.getElementById('playIcon' + index).style.display = 'none';
+      document.getElementById('pauseIcon' + index).style.display = 'inline';
+      currentlyPlayingWaveform = index;
+    } else {
+      document.getElementById('playIcon' + index).style.display = 'inline';
+      document.getElementById('pauseIcon' + index).style.display = 'none';
+      currentlyPlayingWaveform = null;
+    }
+  }
+
+  function resetWaveformIcons(index) {
+    document.getElementById('playIcon' + index).style.display = 'inline';
+    document.getElementById('pauseIcon' + index).style.display = 'none';
+  }
+});
+
+</script>
+    </body>
+  </html>
